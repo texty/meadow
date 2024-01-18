@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        #openseadragon1 {
+          width: 80vw;
+          height: 80vh;
+          margin: auto;
+        }
+        body {
+          margin: 0;
+          padding: 0;
+        }
+
+        p {
+            width: 600px;
+            margin: auto;
+        }
+        </style>
+        
+        <div id="openseadragon1"></div>
+  
+  
+        <script src="https://cdn.jsdelivr.net/npm/openseadragon@3.1/build/openseadragon/openseadragon.min.js"></script>
+        
+        <script type="text/javascript">
+        var viewer = OpenSeadragon({
+          id: "openseadragon1",
+          prefixUrl: "https://cdn.jsdelivr.net/npm/openseadragon@3.1.0/build/openseadragon/images/",
+          tileSources: "big_general-tile-size-512.dzi"
+        });
+        </script>
+    
+</body>
+</html>
